@@ -4,14 +4,17 @@
 
 :root {
     --primary: rgb(141, 226, 249);
-    --accent: rgb(105, 159, 52);
-    --text: rgb(182, 243, 186);
+    --accent: rgb(25, 131, 131);
+    --text: rgb(17, 69, 20);
+    --body: rgb(165, 108, 42);
 }
 
 *{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
     margin:0;
     padding:0;
-    box-sizing: border-box;
+    text-decoration: none;
 }
 
 body{
@@ -30,7 +33,8 @@ header {
 header h1 {
     text-align: left;
     margin:3%;
-    background-color: blueviolet;
+    background-color: ;
+    font-size: 400%;
 }
 
 nav ul {
@@ -38,5 +42,79 @@ nav ul {
     display:flex;
     justify-content: space-between;
     min-width: 600px;
-    color: var(--text)
+}
+
+nav ul li {
+    color: var(--text);
+    font-size: 150%;
+    background-color: aquamarine;
+    
+}
+
+.hero {
+    background-image: url(../../franky.jpeg);
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sidebar {
+    border: 1px, solid black;
+    width: 20%;
+    margin: 2% 0% 2% 4%;
+    padding:5% 2% 2%;
+    display: flex;
+    flex-direction:column;
+    
+}
+
+h2 {
+    color: darkblue;
+    text-align: right;
+    padding: 10% 2% 10% 10%;
+    border-right: 5px solid black;
+}
+
+.about-me section{
+    border: none;
+    width: 75%;
+    height: auto;
+    margin: 2% 0% 2% 4%;
+    padding:10% 2% 10%;
+}
+
+#about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.work section{
+    border: none;
+    width: 75%;
+    height: auto;
+    margin: 2% 0% 2% 4%;
+    padding:10% 2% 10%;
+}
+
+#work {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.contact-me section{
+    border: none;
+    width: 75%;
+    height: auto;
+    margin: 2% 0% 2% 4%;
+    padding:10% 2% 10%;
+}
+
+#contact-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
