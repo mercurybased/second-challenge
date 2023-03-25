@@ -26,7 +26,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1%;
-  background-color: var(--accent);
+  background: linear-gradient(lightskyblue 0%, rgb(154, 214, 154) 35%);
   color: var(--text);
 }
 
@@ -59,22 +59,43 @@ nav ul li {
     object-fit: cover;
 }
 
-.sidebar {
+/* .sidebar {
     border: 1px, solid black;
+    border-right: 5px solid black;
     width: 20%;
     margin: 2% 0% 2% 4%;
     padding:5% 2% 2%;
     display: flex;
     flex-direction:column;
-    
-}
-
-h2 {
+    background-color: aquamarine;
     color: darkblue;
     text-align: right;
     padding: 10% 2% 10% 10%;
-    border-right: 5px solid black;
+} */
+
+.sidebar {
+    background-color: aquamarine;
+    flex-shrink: 0;
+    width: 300px;
 }
+
+.sidebar h2 {
+    align-self: flex-start;
+    background-color: aquamarine;
+    text-align: right;
+    
+    /* Scrolling Declarations */
+    position: sticky;
+    top: 20px;
+    
+    /* Spacing Declarations */
+    border-radius: 10px;
+    border-right: 5px solid black;
+    margin-right: 10px;
+    margin-top: 5%;
+    padding: 10px 10px 50px 0px;
+}
+
 
 .about-me section{
     border: none;
@@ -90,6 +111,23 @@ h2 {
     justify-content: space-between;
 }
 
+.about-me figure{
+    display: flex;
+    flex-direction: column;
+
+    margin: 1%;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+.about-me img {
+    border-radius: 20px;
+    height: 320px;
+    width:auto;
+}
+
+
 .work section{
     border: none;
     width: 75%;
@@ -104,6 +142,37 @@ h2 {
     justify-content: space-between;
 }
 
+.work {
+    background: linear-gradient(lavender 30%, lightskyblue 50%);
+    display: flex;
+}
+.workboxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2% 5%;
+    width: 100%;
+}
+
+.card {
+    background-image: url(../../franky3.jpeg);
+    background-position: center;
+    background-size: 100%;
+
+    border: 10px solid black;
+    margin: 10px 0;
+
+    width: 75%;
+    min-height: 200px;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    line-height: 1;
+    transition: all 1s;
+}
 
 .contact-me section{
     border: none;
