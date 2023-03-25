@@ -1,0 +1,42 @@
+::selection {
+    background-color: var(--primary);
+}
+
+:root {
+    --primary: rgb(141, 226, 249);
+    --accent: rgb(105, 159, 52);
+    --text: rgb(182, 243, 186);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--primary)
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: var(--accent);
+  color: var(--text);
+}
+
+header h1 {
+    text-align: left;
+    margin:3%;
+    background-color: blueviolet;
+}
+
+nav ul {
+    list-style-type: none;
+    display:flex;
+    justify-content: space-between;
+    min-width: 600px;
+    color: var(--text)
+}
