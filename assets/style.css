@@ -41,22 +41,27 @@ nav ul {
     list-style-type: none;
     display:flex;
     justify-content: space-between;
+    align-items: flex-end;
     min-width: 600px;
+    
 }
 
 nav ul li {
     color: var(--text);
     font-size: 150%;
     background-color: aquamarine;
+    border: 1px solid blue;
+    border-radius: 20px;
     
 }
 
 .hero {
     background-image: url(../../franky.jpeg);
-    background-size: cover;
-    height: 250px;
+    background-size: center;
+    background-position: center;
+    height: 200px;
     width: 100%;
-    object-fit: cover;
+
 }
 
 /* .sidebar {
@@ -114,17 +119,20 @@ nav ul li {
 .about-me figure{
     display: flex;
     flex-direction: column;
-
+    
     margin: 1%;
     text-align: center;
-    border: 5px solid black;
-    border-radius: 20px;
 }
 
 .about-me img {
+    border: 2px solid black;
     border-radius: 20px;
     height: 320px;
     width:auto;
+}
+.about-me figcaption{
+    border: 2px solid black;
+    border-radius: 10%;
 }
 
 
@@ -133,7 +141,6 @@ nav ul li {
     width: 75%;
     height: auto;
     margin: 2% 0% 2% 4%;
-    padding:10% 2% 10%;
 }
 
 #work {
@@ -182,20 +189,26 @@ nav ul li {
     height: 60vh;
 }
 
-.contact-me section{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-/* #contact-me {
+button {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-} */
-
-.contact-me a {
+    justify-content: space-around;
+    align-items: center;
+    align-items: center;
     font-size: 175%;
     color: rgb(215, 129, 0);
     background-color: blanchedalmond;
+    }
+
+#contact-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+header nav ul li a:hover {
+    background: linear-gradient(cornflowerblue 50%, purple 70%);
+
 }
