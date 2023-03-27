@@ -33,7 +33,6 @@ header, footer {
 header h1 {
     text-align: left;
     margin:3%;
-    background-color: ;
     font-size: 400%;
 }
 
@@ -41,7 +40,8 @@ nav ul {
     list-style-type: none;
     display:flex;
     justify-content: space-between;
-    align-items: flex-end;
+    /* align-items: flex-end; */
+    padding-top: 100px;
     min-width: 600px;
     
 }
@@ -63,20 +63,6 @@ nav ul li {
     width: 100%;
 
 }
-
-/* .sidebar {
-    border: 1px, solid black;
-    border-right: 5px solid black;
-    width: 20%;
-    margin: 2% 0% 2% 4%;
-    padding:5% 2% 2%;
-    display: flex;
-    flex-direction:column;
-    background-color: aquamarine;
-    color: darkblue;
-    text-align: right;
-    padding: 10% 2% 10% 10%;
-} */
 
 .sidebar {
     background-color: aquamarine;
@@ -191,22 +177,25 @@ nav ul li {
     height: 60vh;
 }
 
-.contact-me a {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    align-items: center;
-    font-size: 175%;
-    color: rgb(215, 129, 0);
-    background-color: blanchedalmond;
-    }
-
 #contact-me {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
+
+#contact-me a {
+    display: flex;
+    align-items: center;
+    font-size: 175%;
+    color: rgb(215, 129, 0);
+    background-color: var(--primary);
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 100px;
+}
+
+
 
 footer p {
     display: flex;
@@ -230,3 +219,35 @@ header nav ul li a:hover {
 .card#favorite:hover {
     transform: scale(1.2)
 }
+
+@media screen and (max-width:992){
+    header {
+        height: 400px;
+        flex-wrap: wrap;
+    }
+    .sidebar {
+        width: 100px
+    }
+    main {
+        flex-wrap:nowrap;
+        width: 810px
+    }
+}
+
+@media screen and (max-width:768px){
+    header {
+        height: 250px;
+        flex-wrap: wrap;
+    }
+    .sidebar {
+        width:180px;
+    }
+    main {
+        width: 588px;
+    }
+    #contact-me a {
+        width: 588px;
+    }
+    div .hero {
+        width: 767px;
+    }
