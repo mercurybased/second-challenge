@@ -56,7 +56,7 @@ nav ul li {
 }
 
 .hero {
-    background-image: url(../../franky.jpeg);
+    background-image: url(../assets/franky.jpeg);
     background-size: center;
     background-position: center;
     height: 200px;
@@ -168,11 +168,11 @@ nav ul li {
 }
 
 #card1 {
-    background-image: url(../../franky4.jpeg);
+    background-image: url(../assets/franky4.jpeg);
 }
 
 #card2 {
-    background-image: url(../Cate-Blanchett-Thor.jpg);
+    background-image: url(../assets/Cate-Blanchett-Thor.jpg);
 
 }
 
@@ -181,11 +181,11 @@ nav ul li {
 }
 
 #card4 {
-    background-image: url(../../muna.jpg) ;
+    background-image: url(../assets/muna.jpg) ;
 }
 
 #favorite {
-    background-image: url(../../franky3.jpeg);
+    background-image: url(../assets/franky3.jpeg);
     width: 100%;
     min-height: 300px;
     height: 60vh;
