@@ -110,7 +110,7 @@ nav ul li {
     text-align: center;
 }
 
-.about-me img {
+.franky {
     border: 2px solid black;
     border-radius: 20px;
     height: 320px;
@@ -148,11 +148,10 @@ nav ul li {
 }
 
 .card {
-    background-image: url(../../franky4.jpeg);
     background-position: center;
-    background-size: 50%;
-    color: rgb(215, 129, 0);
-
+    background-size: 100%;
+    color: rgb(207, 181, 146);
+    text-shadow: 10%;
     transition: transform .2s;
 
     border: 6px solid black;
@@ -170,10 +169,27 @@ nav ul li {
     transition: all 1s;
 }
 
-.card#favorite {
+#card1 {
+    background-image: url(../../franky4.jpeg);
+}
+
+#card2 {
+    background-image: url(../Cate-Blanchett-Thor.jpg);
+
+}
+
+#card3 {
+    background-image: url(https://www.thisiscolossal.com/wp-content/uploads/2018/12/BASQUIAT_XL_GB_3D_01141.jpg);
+}
+
+#card4 {
+    background-image: url(../../muna.jpg) ;
+}
+
+#favorite {
     background-image: url(../../franky3.jpeg);
     width: 100%;
-    min height: 300px;
+    min-height: 300px;
     height: 60vh;
 }
 
@@ -220,32 +236,29 @@ header nav ul li a:hover {
     transform: scale(1.2)
 }
 
+footer {
+    text-align: center;
+}
+
+footer p {
+    font-size: 100%;
+    font-style: italic;
+    padding: 20px;
+}
+
 @media screen and (max-width:992){
     .sidebar {
-        width:180px;
+        width:20%;
     }
     header {
         height: 250px;
         flex-wrap: wrap;
     }
-    main {
-        width: 812px;
-    }
+
     #contact-me a {
         width: 812px;
     }
 }
-/* header {
-    height: 400px;
-    flex-wrap: wrap;
-}
-.sidebar {
-    width: 100px
-}
-main {
-    flex-wrap:nowrap;
-    width: 810px
-} */
 
 @media screen and (max-width:768px){
     header,
@@ -257,7 +270,6 @@ main {
     nav ul {
         flex-direction: row;
         margin:0;
-        /* justify-content: center; */
         min-width: 0;
 
     }
@@ -268,3 +280,8 @@ main {
         flex-wrap: wrap;
 
     }
+    .franky {
+        height: 200px;
+        width: auto;
+    }
+}
