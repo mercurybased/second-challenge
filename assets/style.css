@@ -221,33 +221,50 @@ header nav ul li a:hover {
 }
 
 @media screen and (max-width:992){
-    header {
-        height: 400px;
-        flex-wrap: wrap;
-    }
     .sidebar {
-        width: 100px
+        width:180px;
     }
-    main {
-        flex-wrap:nowrap;
-        width: 810px
-    }
-}
-
-@media screen and (max-width:768px){
     header {
         height: 250px;
         flex-wrap: wrap;
     }
-    .sidebar {
-        width:180px;
-    }
     main {
-        width: 588px;
+        width: 812px;
     }
     #contact-me a {
-        width: 588px;
+        width: 812px;
     }
-    div .hero {
-        width: 767px;
+}
+/* header {
+    height: 400px;
+    flex-wrap: wrap;
+}
+.sidebar {
+    width: 100px
+}
+main {
+    flex-wrap:nowrap;
+    width: 810px
+} */
+
+@media screen and (max-width:768px){
+    header,
+    .hero {
+        height: 250px;
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+        flex-direction: row;
+        margin:0;
+        /* justify-content: center; */
+        min-width: 0;
+
+    }
+    .sidebar {
+        width:20%;
+    }
+    figure {
+        flex-wrap: wrap;
+
     }
